@@ -19,7 +19,7 @@
           "id": 0
         },
         {
-          "name": "sala_asignadas",
+          "name": "sala_asignada",
           "type": "INTEGER",
           "default": "",
           "check": "",
@@ -73,8 +73,8 @@
     {
       "id": 1,
       "name": "Asistencias",
-      "x": -706.4233169132414,
-      "y": -441.0710091652427,
+      "x": -809.5870056346017,
+      "y": -782.1260714200729,
       "fields": [
         {
           "name": "id_asistencia",
@@ -89,7 +89,7 @@
           "id": 0
         },
         {
-          "name": "id_persona",
+          "name": "id_mascota",
           "type": "INTEGER",
           "default": "",
           "check": "",
@@ -103,6 +103,20 @@
           "values": []
         },
         {
+          "name": "id_persona",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 2,
+          "size": "",
+          "values": []
+        },
+        {
           "name": "asistencia",
           "type": "BOOLEAN",
           "default": "",
@@ -112,7 +126,7 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "id": 2,
+          "id": 3,
           "size": "",
           "values": []
         },
@@ -126,7 +140,7 @@
           "notNull": false,
           "increment": false,
           "comment": "",
-          "id": 3,
+          "id": 4,
           "size": "",
           "values": []
         },
@@ -140,7 +154,7 @@
           "notNull": false,
           "increment": false,
           "comment": "",
-          "id": 4,
+          "id": 5,
           "size": "",
           "values": []
         },
@@ -154,7 +168,7 @@
           "notNull": false,
           "increment": false,
           "comment": "",
-          "id": 5,
+          "id": 6,
           "size": "",
           "values": []
         }
@@ -167,8 +181,8 @@
     {
       "id": 2,
       "name": "Testimonios",
-      "x": -36.959863198879475,
-      "y": 4.702394019621011,
+      "x": -41.009793278058396,
+      "y": 33.34535244423034,
       "fields": [
         {
           "name": "id_testimonio",
@@ -221,7 +235,7 @@
           "increment": false,
           "comment": "",
           "id": 3,
-          "size": 255
+          "size": 1000
         }
       ],
       "comment": "",
@@ -232,11 +246,11 @@
     {
       "id": 3,
       "name": "Eventos",
-      "x": -1332.2384559874704,
-      "y": 67.8882259259384,
+      "x": -1432.1696084802434,
+      "y": -196.85400473115737,
       "fields": [
         {
-          "name": "id_eventos",
+          "name": "id_evento",
           "type": "INTEGER",
           "default": "",
           "check": "",
@@ -290,7 +304,7 @@
           "increment": false,
           "comment": "",
           "id": 3,
-          "size": 255
+          "size": 1000
         }
       ],
       "comment": "",
@@ -301,8 +315,8 @@
     {
       "id": 4,
       "name": "Mascotas",
-      "x": 632.611718919444,
-      "y": -322.5655403741738,
+      "x": 579.3980769231428,
+      "y": -739.4856817415431,
       "fields": [
         {
           "name": "id_mascota",
@@ -353,11 +367,11 @@
     {
       "id": 5,
       "name": "Participaciones",
-      "x": -705.8996579971972,
-      "y": 124.16054720448477,
+      "x": -807.7482094578032,
+      "y": -156.84261398695384,
       "fields": [
         {
-          "name": "id_evento",
+          "name": "id_participación",
           "type": "INTEGER",
           "default": "",
           "check": "",
@@ -383,7 +397,7 @@
           "values": []
         },
         {
-          "name": "id_actividad",
+          "name": "id_evento",
           "type": "INTEGER",
           "default": "",
           "check": "",
@@ -401,6 +415,78 @@
       "indices": [],
       "color": "#f03c3c",
       "key": 1741859283705
+    },
+    {
+      "id": 6,
+      "name": "Mochilas",
+      "x": -33.66222550328507,
+      "y": -607.3232110678194,
+      "fields": [
+        {
+          "name": "id_objeto",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": 0
+        },
+        {
+          "name": "id_persona",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": true,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "id": 1,
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "tipo",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "id": 2,
+          "size": "",
+          "values": [
+            "Grande",
+            "Pequeña"
+          ]
+        },
+        {
+          "name": "descripción",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "id": 3,
+          "values": [
+            "Grande",
+            "Pequeña"
+          ],
+          "size": 1000
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a",
+      "key": 1741867085653
     }
   ],
   "relationships": [
@@ -450,7 +536,7 @@
     },
     {
       "startTableId": 1,
-      "startFieldId": 1,
+      "startFieldId": 2,
       "endTableId": 0,
       "endFieldId": 0,
       "cardinality": "many_to_one",
@@ -458,10 +544,32 @@
       "deleteConstraint": "Cascade",
       "name": "Una persona puede tener varias asistencias",
       "id": 4
+    },
+    {
+      "startTableId": 1,
+      "startFieldId": 1,
+      "endTableId": 4,
+      "endFieldId": 0,
+      "cardinality": "many_to_one",
+      "updateConstraint": "Cascade",
+      "deleteConstraint": "Cascade",
+      "name": "Una mascota puede tener varias asistencias",
+      "id": 5
+    },
+    {
+      "startTableId": 6,
+      "startFieldId": 1,
+      "endTableId": 0,
+      "endFieldId": 0,
+      "cardinality": "one_to_one",
+      "updateConstraint": "Cascade",
+      "deleteConstraint": "Cascade",
+      "name": "Una persona solo puede tener una mochila",
+      "id": 6
     }
   ],
   "notes": [],
   "subjectAreas": [],
   "database": "mysql",
-  "title": "Untitled Diagram"
+  "title": "mini-proyecto-sql"
 }
