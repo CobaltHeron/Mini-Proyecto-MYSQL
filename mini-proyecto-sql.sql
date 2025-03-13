@@ -2,6 +2,7 @@ CREATE TABLE `Personas` (
 	`id_persona` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`nombre` VARCHAR(255) NOT NULL,
 	`tipo` ENUM('Estudiante', 'Profesor', 'Otro') NOT NULL,
+	`edad` INTEGER,
 	PRIMARY KEY(`id_persona`)
 );
 

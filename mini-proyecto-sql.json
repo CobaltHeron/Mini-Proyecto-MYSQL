@@ -49,6 +49,20 @@
             "Profesor",
             "Otro"
           ]
+        },
+        {
+          "name": "edad",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "id": 3,
+          "size": "",
+          "values": []
         }
       ],
       "comment": "",
