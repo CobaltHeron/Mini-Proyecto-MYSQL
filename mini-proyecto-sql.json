@@ -423,7 +423,7 @@
       "y": -607.3232110678194,
       "fields": [
         {
-          "name": "id_objeto",
+          "name": "id_mochila",
           "type": "INTEGER",
           "default": "",
           "check": "",

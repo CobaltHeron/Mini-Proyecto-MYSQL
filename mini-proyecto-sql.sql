@@ -54,11 +54,11 @@ CREATE TABLE `Participaciones` (
 
 
 CREATE TABLE `Mochilas` (
-	`id_objeto` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
+	`id_mochila` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`id_persona` INTEGER UNIQUE,
 	`tipo` ENUM('Grande', 'Pequeña'),
 	`descripción` VARCHAR(1000),
-	PRIMARY KEY(`id_objeto`)
+	PRIMARY KEY(`id_mochila`)
 );
 
 
