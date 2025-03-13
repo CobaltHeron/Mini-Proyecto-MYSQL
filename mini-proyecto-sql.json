@@ -19,20 +19,6 @@
           "id": 0
         },
         {
-          "name": "sala_asignada",
-          "type": "INTEGER",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "id": 1,
-          "size": "",
-          "values": []
-        },
-        {
           "name": "nombre",
           "type": "VARCHAR",
           "default": "",
@@ -42,7 +28,7 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "id": 2,
+          "id": 1,
           "values": [],
           "size": 255
         },
@@ -56,7 +42,7 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "id": 3,
+          "id": 2,
           "size": "",
           "values": [
             "Estudiante",
@@ -331,7 +317,7 @@
           "id": 0
         },
         {
-          "name": "id_propietario",
+          "name": "id_persona",
           "type": "INTEGER",
           "default": "",
           "check": "",

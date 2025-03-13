@@ -1,6 +1,5 @@
 CREATE TABLE `Personas` (
 	`id_persona` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`sala_asignada` INTEGER NOT NULL,
 	`nombre` VARCHAR(255) NOT NULL,
 	`tipo` ENUM('Estudiante', 'Profesor', 'Otro') NOT NULL,
 	PRIMARY KEY(`id_persona`)
@@ -39,7 +38,7 @@ CREATE TABLE `Eventos` (
 
 CREATE TABLE `Mascotas` (
 	`id_mascota` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`id_propietario` INTEGER NOT NULL,
+	`id_persona` INTEGER NOT NULL,
 	`nombre` VARCHAR(255) NOT NULL,
 	PRIMARY KEY(`id_mascota`)
 );
@@ -66,7 +65,7 @@ ALTER TABLE `Testimonios`
 ADD FOREIGN KEY(`id_persona`) REFERENCES `Personas`(`id_persona`)
 ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE `Mascotas`
-ADD FOREIGN KEY(`id_propietario`) REFERENCES `Personas`(`id_persona`)
+ADD FOREIGN KEY(`id_persona`) REFERENCES `Personas`(`id_persona`)
 ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE `Participaciones`
 ADD FOREIGN KEY(`id_persona`) REFERENCES `Personas`(`id_persona`)
