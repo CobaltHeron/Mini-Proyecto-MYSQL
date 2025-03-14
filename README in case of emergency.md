@@ -1,5 +1,6 @@
-Lista de Pistas para Usar en Caso de Dificultades
-Si los jugadores se atascan en algún punto, estas pistas pueden guiarlos:
+Lista de Pistas para Usar en Caso de Dificultades:
+
+
 Alguien vio a Falete en el aula el martes por la tarde
  (Pista clave para enfocar la búsqueda en la asistencia del martes.)
 
