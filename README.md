@@ -25,7 +25,7 @@ ________________________________________________________________________________
 
 
 
-Estructura de la Base de Datos:
+**Estructura de la Base de Datos:**
 
 
 ![mini-proyecto-sql](https://github.com/user-attachments/assets/29efffda-9971-446d-a1f6-ca0964e39a46)
