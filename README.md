@@ -68,8 +68,7 @@ Tabla `Mochilas`:
 
 **Diagrama Entidad-Relación (ER)**
 
-
-![mini-proyecto-sql](https://github.com/user-attachments/assets/29efffda-9971-446d-a1f6-ca0964e39a46)
+![mini-proyecto-sql](https://github.com/user-attachments/assets/02ce79d9-d661-487b-8c41-25a7ae801b6b)
 
 
 **Tipos de relación (N:N, N:1, 1:1)**
@@ -77,4 +76,3 @@ Tabla `Mochilas`:
 - Relación 1:1 - Tabla `Personas`     a Tabla `Mochilas`
 - Relación N:1 - Tabla `Asistencias`  a Tabla `Personas`
 - Relación N:N - Tabla `Personas`     a Tabla `Eventos` - Tabla intermedia: `Participaciones`
-- 
