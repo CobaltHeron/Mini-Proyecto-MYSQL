@@ -25,13 +25,14 @@ ________________________________________________________________________________
 Tabla `Personas`:  
 `id_persona` (**PK**)  
 `nombre`  
-`tipo` - (Estudiante, Profesor, Otros)  
+`tipo` - ENUM (Estudiante, Profesor, Otros)  
 `edad`  
 
 Tabla `Asistencias`:  
 `id_asistencia` (**PK**)  
 `id_persona` (**FK** a la tabla Personas)  
 `id_mascota` (**FK** a tabla Mascotas)  
+`asistencia` 
 `fecha`  
 `hora_entrada`  
 `hora_salida`  
@@ -50,18 +51,19 @@ Tabla `Eventos`:
 
 Tabla `Mascotas`:  
 `id_mascota` (PK)  
+`id_persona` (FK a la tabla `Personas`)
 `nombre`  
-`id_propietario` (FK a la tabla `Personas`)  
+`tipo`  
 
 Tabla `Participaciones`: (Tabla Intermedia)  
 `id_paticipación` (PK)  
 `id_persona` (FK a la tabla `Personas`)  
-`id_evento` (FK a la tabla Eventos`)  
+`id_evento` (FK a la tabla `Eventos`)  
 
 Tabla `Mochilas`:  
 `id_mochila` (PK)  
 `id_persona` (FK a la tabla Personas)  
-`tipo`  
+`tipo` ENUM (Pequeña, Grande)  
 `descripción`  
 
 **Diagrama Entidad-Relación (ER)**
