@@ -27,5 +27,3 @@ El día después de la desaparición, alguien se ausentó o salió antes de lo n
 
 El dueño de los perritos podría saber algo más
  (Pista final para relacionar al sospechoso con los animales que estuvieron con Falete.)
-
-______________________________________________________________________________________________________________________________________
