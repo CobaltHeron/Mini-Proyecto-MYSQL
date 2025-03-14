@@ -5,7 +5,7 @@ Historia: La Desaparición de Falete
 
 ¿Quién se ha llevado a Falete?
 
-![IMG_20250314_100800-removebg](https://github.com/user-attachments/assets/3a0f8df9-a323-4e8b-800a-9b9af92c04d2)
+![IMG_20250314_100800-removebg-preview](https://github.com/user-attachments/assets/3a243dc9-1b17-423e-99ee-2565ee406bbb)
 
 
 Era un día soleado en Las Palmas de Gran Canaria, y los estudiantes y el personal de Reboot Academy disfrutaban de una jornada animada en el bootcamp de IA y Análisis de Datos. Sin embargo, el ambiente se tornó sombrío cuando el querido Falete, que siempre estaba sobre el estante del microondas, desapareció misteriosamente.
