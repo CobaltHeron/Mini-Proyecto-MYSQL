@@ -1,4 +1,4 @@
-Lista de Pistas para Usar en Caso de Dificultades:
+**Lista de Pistas para Usar en Caso de Dificultades:**
 
 
 Alguien vio a Falete en el aula el martes por la tarde
